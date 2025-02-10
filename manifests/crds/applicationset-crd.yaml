@@ -271,6 +271,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -379,6 +381,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -506,6 +544,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -907,6 +947,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -1015,6 +1057,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -1142,6 +1220,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -1542,6 +1622,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -1650,6 +1732,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -1777,6 +1895,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -2157,6 +2277,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -2265,6 +2387,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -2392,6 +2550,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -2797,6 +2957,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -2905,6 +3067,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -3032,6 +3230,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -3433,6 +3633,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -3541,6 +3743,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -3668,6 +3906,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -4068,6 +4308,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -4176,6 +4418,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -4303,6 +4581,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -4683,6 +4963,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -4791,6 +5073,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -4918,6 +5236,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -5306,6 +5626,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -5414,6 +5736,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -5541,6 +5899,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -6148,6 +6508,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -6256,6 +6618,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -6383,6 +6781,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -6985,6 +7385,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -7093,6 +7495,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -7220,6 +7658,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -7617,6 +8057,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -7725,6 +8167,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -7852,6 +8330,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -8259,6 +8739,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -8367,6 +8849,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -8494,6 +9012,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -8895,6 +9415,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -9003,6 +9525,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -9130,6 +9688,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -9530,6 +10090,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -9638,6 +10200,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -9765,6 +10363,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -10145,6 +10745,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -10253,6 +10855,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -10380,6 +11018,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -10768,6 +11408,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -10876,6 +11518,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -11003,6 +11681,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -11610,6 +12290,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -11718,6 +12400,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -11845,6 +12563,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -12447,6 +13167,8 @@ spec:
                                                     type: boolean
                                                   forceCommonLabels:
                                                     type: boolean
+                                                  ignoreMissingComponents:
+                                                    type: boolean
                                                   images:
                                                     items:
                                                       type: string
@@ -12555,6 +13277,42 @@ spec:
                                                 type: string
                                             required:
                                             - repoURL
+                                            type: object
+                                          sourceHydrator:
+                                            properties:
+                                              drySource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  repoURL:
+                                                    type: string
+                                                  targetRevision:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - repoURL
+                                                - targetRevision
+                                                type: object
+                                              hydrateTo:
+                                                properties:
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - targetBranch
+                                                type: object
+                                              syncSource:
+                                                properties:
+                                                  path:
+                                                    type: string
+                                                  targetBranch:
+                                                    type: string
+                                                required:
+                                                - path
+                                                - targetBranch
+                                                type: object
+                                            required:
+                                            - drySource
+                                            - syncSource
                                             type: object
                                           sources:
                                             items:
@@ -12682,6 +13440,8 @@ spec:
                                                     forceCommonAnnotations:
                                                       type: boolean
                                                     forceCommonLabels:
+                                                      type: boolean
+                                                    ignoreMissingComponents:
                                                       type: boolean
                                                     images:
                                                       items:
@@ -13083,6 +13843,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -13191,6 +13953,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -13318,6 +14116,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -13705,6 +14505,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -13813,6 +14615,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -13940,6 +14778,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -14547,6 +15387,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -14655,6 +15497,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -14782,6 +15660,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -15384,6 +16264,8 @@ spec:
                                           type: boolean
                                         forceCommonLabels:
                                           type: boolean
+                                        ignoreMissingComponents:
+                                          type: boolean
                                         images:
                                           items:
                                             type: string
@@ -15492,6 +16374,42 @@ spec:
                                       type: string
                                   required:
                                   - repoURL
+                                  type: object
+                                sourceHydrator:
+                                  properties:
+                                    drySource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        repoURL:
+                                          type: string
+                                        targetRevision:
+                                          type: string
+                                      required:
+                                      - path
+                                      - repoURL
+                                      - targetRevision
+                                      type: object
+                                    hydrateTo:
+                                      properties:
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - targetBranch
+                                      type: object
+                                    syncSource:
+                                      properties:
+                                        path:
+                                          type: string
+                                        targetBranch:
+                                          type: string
+                                      required:
+                                      - path
+                                      - targetBranch
+                                      type: object
+                                  required:
+                                  - drySource
+                                  - syncSource
                                   type: object
                                 sources:
                                   items:
@@ -15619,6 +16537,8 @@ spec:
                                           forceCommonAnnotations:
                                             type: boolean
                                           forceCommonLabels:
+                                            type: boolean
+                                          ignoreMissingComponents:
                                             type: boolean
                                           images:
                                             items:
@@ -16091,6 +17011,8 @@ spec:
                                 type: boolean
                               forceCommonLabels:
                                 type: boolean
+                              ignoreMissingComponents:
+                                type: boolean
                               images:
                                 items:
                                   type: string
@@ -16199,6 +17121,42 @@ spec:
                             type: string
                         required:
                         - repoURL
+                        type: object
+                      sourceHydrator:
+                        properties:
+                          drySource:
+                            properties:
+                              path:
+                                type: string
+                              repoURL:
+                                type: string
+                              targetRevision:
+                                type: string
+                            required:
+                            - path
+                            - repoURL
+                            - targetRevision
+                            type: object
+                          hydrateTo:
+                            properties:
+                              targetBranch:
+                                type: string
+                            required:
+                            - targetBranch
+                            type: object
+                          syncSource:
+                            properties:
+                              path:
+                                type: string
+                              targetBranch:
+                                type: string
+                            required:
+                            - path
+                            - targetBranch
+                            type: object
+                        required:
+                        - drySource
+                        - syncSource
                         type: object
                       sources:
                         items:
@@ -16326,6 +17284,8 @@ spec:
                                 forceCommonAnnotations:
                                   type: boolean
                                 forceCommonLabels:
+                                  type: boolean
+                                ignoreMissingComponents:
                                   type: boolean
                                 images:
                                   items:
